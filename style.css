@@ -289,7 +289,10 @@ header{
     line-height: 24px;
     letter-spacing: 0.8px;
 }
-
+/**/
+footer{
+    position: sticky;
+}
 .container_list_footer{
     display: grid;
     justify-content: space-around;
@@ -315,36 +318,36 @@ header{
     letter-spacing: 0.8px;
     color: #A0A0A0;
 }
-.item3_of_list1{
+.item1_of_list1{
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 1;
 }
-.item3_of_list1{
-    grid-column-start: 1;
-    grid-column-end: 3;
+.item2_of_list1{
+    grid-column-start: 2;
+    grid-column-end: 2;
     grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row-end: 1;
 }
 .item3_of_list1{
     position: relative;
     bottom: 3000%;
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 .item4_of_list1{
-    position: relative;
-    top: -44%;
+    position: absolute;
+    left: 92%;
     color: white;
     background-color: black;
     height: 82px;
     width: 82px;
     text-align: center;
-    grid-column-start: 7;
-    grid-column-end: 8;
+    grid-column-start: 10;
+    grid-column-end: 10;
     grid-row-start: 1;
     grid-row-end: 1;
 }
@@ -355,13 +358,10 @@ header{
     transform: translate(-50%, -50%);
 }
 .item5_of_list1{
-    position: relative;
-    bottom: -400%;
-    left: 30%;
-    grid-column-start: 6;
-    grid-column-end: 7;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-column-start: 9;
+    grid-column-end: 9;
+    grid-row-start: 7;
+    grid-row-end: 9;
 }
 .item5_of_list1 li{
     display: inline-block;
