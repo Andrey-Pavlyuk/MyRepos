@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: gainsboro;
+}
+.container-forms{
+    display: flex;
+    justify-content: space-evenly;
+}
+#FormRegistrationWorker {
+    font-weight: 600;
+    background-color: #ECF1EF;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border: 2px solid plum;
+    height: 400px;
+    width: 600px;
+}
+
+#FormRegistrationSoftwareEngineer{
+    font-weight: 600;
+    background-color: #ECF1EF;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border: 2px solid plum;
+    height: 400px;
+    width: 600px;
+}
+
+.container-label p{
+    margin-bottom: 36px;
+}
+.container-input p{
+    margin-bottom: 10px;
+}
+
+h1{
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-style: italic;
+    margin-bottom: 70px;
+    color: black;
+}
+h2{
+    text-align: center;
+    font-family: "Arial", sans-serif;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#FormRegistrationWorker input[type=text], #FormRegistrationWorker input[type=number]{
+    padding: 10px;
+    resize: vertical;
+    height: 20px;
+    width: 200px;
+    border-radius:15px;
+    border:0;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+#FormRegistrationWorker input[type=submit],
+#FormRegistrationSoftwareEngineer input[type=submit]{
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: aliceblue;
+    border: 3px solid plum;
+}
+#FormRegistrationWorker input[type=submit]:hover,
+#FormRegistrationSoftwareEngineer input[type=submit]:hover{
+    transition-duration: 1s;
+    background-color: plum;
+}
+
+.br{
+    margin-top: 20px;
+    height: 3px;
+    width: 100%;
+    background-color: plum;
+}
+
+#container-info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-select{
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+select{
+    border: 0;
+    background-color: plum;
+    border-radius: 10px;
+    padding: 5px;
+    width: 250px;
+    height: 40px;
+}
+
+.container-textarea{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+textarea{
+    border: 2px solid plum;
+    font-size: 20px;
+    width: 595px;
+    height: 160px;
+}
+textarea:hover{
+   background-color: plum;
+}
+.container-textarea label{
+    font-size: 20px;
+}
+.fullInfo{
+    display: flex;
+    justify-content: space-around;
+}
