@@ -2,66 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lesson8</title>
-    <link href="style.css" rel="stylesheet">
+    <title>Lesson9</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container-forms">
-        <form id="FormRegistrationWorker">
-            <h1>Welcome Worker</h1>
-            <div class="container">
-                <div class="container-label">
-                    <p><label>Имя:</label></p>
-                    <p><label>Фамилия:</label></p>
-                    <p><label>Ставка за день работы:</label></p>
-                    <p><label>Количество отработанных часов, максимум: 160:</label></p>
-                </div>
-                <div class="container-input">
-                    <p><label><input name="first-name" id="first-name" type="text" placeholder="Your FirstName..." required></label>
-                    </p>
-                    <p><label><input name="last-name" id="last-name" type="text" placeholder="Your LastName..."
-                                     required></label></p>
-                    <p><label><input name="rate" id="rate" type="number" placeholder="Your rate..." required value="0"></label></p>
-                    <p><label><input name="hours" id="hours" type="number" placeholder="Your hours..." required value="0"></label></p>
+    <div id="loader-start">Loader...</div>
+    <div class='loader loader1'>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <div>
+                            <div></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <input id="submitInfo" type="submit"/>
-        </form>
-        <form id="FormRegistrationSoftwareEngineer">
-            <h2>Section Form: about info Software Engineer</h2>
-            <div class="container-select">
-                <div class="container-select1">
-                    <label>
-                        <select class="selectPosition" name="selectPosition">
-                            <option>Junior</option>
-                            <option>Middle</option>
-                            <option>Senior</option>
-                        </select>
-                    </label>
-                </div>
-                <div class="container-select2">
-                    <label>
-                        <select class="selectRole" name="selectRole">
-                            <option>Backend</option>
-                            <option>Frontend</option>
-                            <option>Fullstack</option>
-                        </select>
-                    </label>
-                </div>
-            </div>
-
-            <div class="container-textarea">
-                <label>Your skills:<br>
-                    <textarea name="textarea"  maxlength ="30" placeholder="Some text..."></textarea>
-                </label>
-            </div>
-            <div class="fullInfo">
-                <div><input id="submitAdditionInfo" type="submit"></div>
-            </div>
-        </form>
+        </div>
     </div>
-    <div class="br"></div>
-    <div id="container-info"></div>
+    <div id="main"></div>
     <script src="function.js"></script>
 </body>
 </html>
