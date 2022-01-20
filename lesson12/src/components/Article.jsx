@@ -1,9 +1,8 @@
-import React from "react";
+import React, {useState} from "react";
 import CommentsCounter from "../elements/CommentsCounterM";
 import Tag from "../elements/Tag";
 import LikesCounter from "../elements/LikesCounter";
 import styles from "./Article.module.scss"
-
 
 const  Article = () => {
     return (
