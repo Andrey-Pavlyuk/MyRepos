@@ -1,0 +1,20 @@
+[
+  {
+    "question": "1. What is your name?",
+    "answer": "My name is Andrew",
+    "id": 1,
+    "activeObject": null
+  },
+  {
+    "question": "2. What is your favorite color?",
+    "answer": "My favorite color is red",
+    "id": 2,
+    "activeObject": null
+  },
+  {
+    "question": "3. Wound you like cat or dog?",
+    "answer": "I prefer cat",
+    "id": 3,
+    "activeObject": null
+  }
+]
