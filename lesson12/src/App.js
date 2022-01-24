@@ -1,13 +1,13 @@
-
+import json from "./source.json"
 import './App.css';
 import News from "./components/News";
 
 function App() {
-
       return (
         <div className="App">
-            {Array.from({length: 3}, (_, index) => <News key={index} />)}
-            {/*<News/>*/}
+            {json.map(item =>
+                <News key={item.id} item={item}/>
+            )}
         </div>
       );
 }

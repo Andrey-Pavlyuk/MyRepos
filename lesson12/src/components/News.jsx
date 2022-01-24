@@ -2,10 +2,10 @@ import React from "react";
 import styles from './News.module.scss';
 import Article from "./Article";
 
-const News = () => {
+const News = ({item}) => {
     return (
         <section className={styles.news}>
-            <Article/>
+            <Article title={item.title} description={item.description} data={item.published} likes={item.likes} comments={item.comments} image={item.image} tags={item.tags}/>
         </section>
     );
 };

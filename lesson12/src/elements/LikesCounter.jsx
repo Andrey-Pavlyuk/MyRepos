@@ -1,35 +1,28 @@
 import React, {useState} from "react";
 import styles from "./LikesCounter.module.scss";
 
-const LikesCounter = () => {
-    const [itemState, changeState]  = useState({
-        activeObject: null,
-        obj: [
-            {
-                id: 'F',
-                likes: 100
-            },
-        ]
-    })
+const LikesCounter = ({likes}) => {
+    const [isLiked, setIsLiked]  = useState(false)
+    const [currentLike, setLike] = useState(likes)
 
-    const addLike = (index) => {
-        changeState({...itemState,  activeObject: itemState.obj[index]})
-        // console.log(itemState.obj[index])
-        itemState.obj.forEach(i => {
-            console.log(i)
-            i.likes += 1
-        })
+    const likeFunc = () => {
+        isLiked ? setIsLiked(false) : setIsLiked(true);
 
-        // console.log(itemState.obj.likes)
+        !isLiked
+            ? setLike(prev => prev + 1)
+            : setLike(prev => prev - 1)
+
+        likes = currentLike
     }
 
     return (
         <span>
-             {itemState.obj.map((elements, index) => (
-                <span key={index} className={styles.likesCounter} onClick={() => {addLike(index)}}>{elements.likes}</span>
-                 ))}
+            <span className={styles.likesCounter} onClick={likeFunc}>{currentLike}</span>
         </span>
     );
 };
 
 export default LikesCounter
+
+
+

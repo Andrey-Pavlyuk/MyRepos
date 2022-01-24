@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./CommentsCounter.module.scss";
 
-const CommentsCounter = () => {
+const CommentsCounter = ({comments}) => {
     return (
-        <span className={styles.commentsCounter}>10</span>
+        <span className={styles.commentsCounter}>{comments}</span>
     );
 };
 

@@ -1,34 +1,40 @@
-import React, {useState} from "react";
+import React from "react";
 import CommentsCounter from "../elements/CommentsCounterM";
 import Tag from "../elements/Tag";
 import LikesCounter from "../elements/LikesCounter";
 import styles from "./Article.module.scss"
 
-const  Article = () => {
+const  Article = ({title, description, data, likes, comments, image, tags}) => {
+
+    const getData = (data) => {
+        let date1 = new Date(data)
+        return date1.getFullYear() + '-' + (date1.getMonth() + 1) + '-' + date1.getDate()
+    }
+
     return (
         <section className={styles.article}>
             <header>
                 <div className={styles.poster}>
-                    <img src="https://miro.medium.com/max/1280/1*N6eYi8bOQ9tyZy8NGWDNKA.png" alt=""/>
+                    <img src={image} alt=""/>
                 </div>
                 <div className={styles.tags}>
                     <div>
-                        <Tag obj={'Literature'}/>
+                        <Tag obj={tags[0]}/>
                     </div>
                     <div>
-                        <Tag obj={'Books'}/>
+                        <Tag obj={tags[1]}/>
                     </div>
                 </div>
             </header>
             <article>
-                <h1>American writer of bad cowboy stories arrived in</h1>
-                <p>Volunteering to help people in need combined with travelling to faraway places is a new </p>
+                <h1>{title}</h1>
+                <p>{description}</p>
             </article>
             <footer>
-                <span>15.07.2017</span>
+                <span>{getData(data)}</span>
                 <div className={styles.controls}>
-                    <CommentsCounter/>
-                    <LikesCounter/>
+                    <CommentsCounter comments={comments}/>
+                    <LikesCounter likes={likes}/>
                 </div>
             </footer>
         </section>
